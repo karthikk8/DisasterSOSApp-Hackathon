@@ -1,0 +1,152 @@
+
+<br><br><br>
+<mat-card class="example-card">
+<div class="form-container form">
+  <form [formGroup]="registerform" (ngSubmit)="registerSubmit()">
+      <!-- <div class="container"> -->
+        <h1><b>Register</b></h1>
+        <p style="padding-left: 10px;">Please fill in this form to create an account.</p>
+        <hr>
+          <label for="name" ><b>&nbsp;Name</b></label>
+            <input  type="text" [formControl]='username' class="name" minlength="5" placeholder="Full Name">
+            <div *ngIf="name.invalid &&(name.dirty||name.touched)" class="=alert alert-danger">Name is required</div>
+            <br/><hr>
+
+            <label for="email"><b>  Email</b></label>
+          <input type="email" [formControl]='email' placeholder="Email" class="email" >
+          <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+              <div *ngIf="email.errors.required"> Email is required. </div>
+              <!-- <div *ngIf="email.errors.required"> Email in correct format </div> -->
+          </div>
+          <br/><hr>
+
+          <label for="phone" ><b>Mobile Number</b></label>
+            <input  type="text" [formControl]='phone' class="phone" minlength="10" placeholder="Mobile Number" class="phone">
+            <div *ngIf="phone.invalid &&(phone.dirty|| phone.touched)" class="=alert alert-danger">
+              <div *ngIf="phone.errors.required"> Mobile Number is required </div>
+              <div *ngIf="phone.errors.minlength"> Mobile number incorrect</div>
+            </div>
+            <br/> <hr>
+
+          <label for="address" ><b>Resedential Address</b></label>
+            <input  type="text" [formControl]='address' class="address" minlength="20" placeholder="Complete Home Address" class="username">
+            <div *ngIf="address.invalid &&(address.dirty|| address.touched)" class="=alert alert-danger">
+              <div *ngIf="address.errors.required"> Address is required </div>
+              <div *ngIf="address.errors.minlength"> Please put a complete resedential address</div>
+            </div>
+            <br/><hr>
+
+          <label for="oaddress" ><b>Official Address</b></label>
+            <input  type="text" [formControl]='oaddress' class="oaddress" minlength="20" placeholder="Official Address" class="username">
+            <div *ngIf="oaddress.invalid &&(oaddress.dirty|| oaddress.touched)" class="=alert alert-danger">
+            </div>
+            <br/><hr>
+
+          <label for="latitude" ><b>Home Location</b></label> <br>
+            <input  type="text" [formControl]='latitude' class="latitude" minlength="20" placeholder="Latitude" class="latitude">
+            <div *ngIf="latitude.invalid &&(latitude.dirty|| latitude.touched)" class="=alert alert-danger">
+            <div *ngIf="latitude.errors.required"> Latitude is required </div>
+            </div>
+            <label for="longitude" ></label>
+            <input  type="text" [formControl]='longitude' class="longitude" minlength="20" placeholder="Longitude" class="longitude" >
+            <div *ngIf="longitude.invalid &&(longitude.dirty|| longitude.touched)" class="=alert alert-danger">
+            <div *ngIf="longitude.errors.required"> Longitude is required </div>
+            </div>
+            <br/><hr>
+
+          <label for="noOfPeople" ><b>Number of People in the family</b></label>
+            <input  type="text" [formControl]='noOfPeople' class="noOfPeople" maxlength="3" placeholder="including children and adults" class="username">
+            <div *ngIf="noOfPeople.invalid &&(noOfPeople.dirty|| noOfPeople.touched)" class="=alert alert-danger">
+            <div *ngIf="noOfPeople.errors.required"> Field Required </div>
+            <div *ngIf="noOfPeople.errors.maxlength">  </div>
+            </div>
+            <br/><hr>
+
+          <label for="psw"><b>Password</b></label>
+            <input type="password" [formControl]='password' placeholder="Password" class="password" minlength="5"><br>
+            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+            <div *ngIf="password.errors.required"> Password is required. </div>
+            <div *ngIf="password.errors.minlength"> Password must be at least 5 characters long. </div>
+            </div>
+          <label for="psw-repeat"><b>Confirm Password</b></label>
+            <input type="password" [formControl]='Confirmpassword' placeholder="Confirm Password" name="psw-repeat" required>
+            <div *ngIf="Confirmpassword.invalid && (Confirmpassword.dirty || Confirmpassword.touched)" class="alert alert-danger">
+            <div *ngIf="Confirmpassword.errors.required"> It is required to repeat password </div>
+            <div *ngIf="Confirmpassword.errors.minlength"> Password must be at least 5 characters long. </div>
+          </div>
+          <hr>
+
+<!-- ------------------------------------------------------------------------------------- -->
+<table style="width:100%">
+  <th> Name </th>
+  <th> Contact number </th>
+  <th> Email </th>
+<br><br>
+<!-- first row -->
+  <tr >
+    <td>
+      <input type="text" [formControl]='usercontact1name' placeholder="Contact Name 1" name="psw-repeat" required>
+      <div *ngIf="usercontact1name.invalid && (usercontact1name.dirty || usercontact1name.touched)" class="alert alert-danger">
+        <div *ngIf="usercontact1name.errors.required"> Conatct Name1 is required. </div>
+      </div>
+    </td>
+  <td>
+    <input type="text" [formControl]='usercontact1mobileno' placeholder="Mobile Number 1" name="psw-repeat" required>
+    <div *ngIf="usercontact1mobileno.invalid && (usercontact1mobileno.dirty || usercontact1mobileno.touched)" class="alert alert-danger">
+      <div *ngIf="usercontact1mobileno.errors.required"> Mobile Number1 is required. </div>
+    </div>
+  </td>
+  <td>
+    <input type="text" [formControl]='usercontact1emailaddress' placeholder="Email 1" name="psw-repeat" required>
+    <div *ngIf="usercontact1emailaddress.invalid && (usercontact1emailaddress.dirty || usercontact1emailaddress.touched)" class="alert alert-danger">
+      <div *ngIf="usercontact1emailaddress.errors.required"> email1 is required. </div>
+      </div>
+    </td>
+  </tr>
+  <!-- sec row -->
+  <tr >
+    <td>
+      <input type="text" [formControl]='usercontact2name' placeholder="Contact Name 2" name="psw-repeat" required>
+      <div *ngIf="usercontact2name.invalid && (usercontact2name.dirty || usercontact2name.touched)" class="alert alert-danger">
+        <div *ngIf="usercontact2name.errors.required"> Conatct Name2 is required. </div>
+      </div>
+    </td>
+    <td>
+    <input type="text" [formControl]='usercontact2mobileno' placeholder="Mobile Number 2" name="psw-repeat" required>
+    <div *ngIf="usercontact2mobileno.invalid && (usercontact2mobileno.dirty || usercontact2mobileno.touched)" class="alert alert-danger">
+      <div *ngIf="usercontact2mobileno.errors.required"> Mobile Number2 is required. </div>
+    </div>
+  </td>
+  <td>
+    <input type="text" [formControl]='usercontact2emailaddress' placeholder="Email2" name="psw-repeat" required>
+    <div *ngIf="usercontact2emailaddress.invalid && (usercontact2emailaddress.dirty || usercontact2emailaddress.touched)" class="alert alert-danger">
+      <div *ngIf="usercontact2emailaddress.errors.required"> email2 is required. </div>
+      </div>
+    </td>
+  </tr>
+  <!-- third row -->
+  <tr >
+    <td>
+      <input type="text" [formControl]='usercontact3name' placeholder="Contact Name 3" name="psw-repeat" required>
+    </td>
+    <td>
+    <input type="text" [formControl]='usercontact3mobileno' placeholder="Mobile Number 3" name="psw-repeat" required>
+  </td>
+  <td>
+    <input type="text" [formControl]='usercontact3emailaddress' placeholder="Email 3" name="psw-repeat" required>
+    </td>
+  </tr>
+</table>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+
+      <div class="example-section">
+        <!-- <mat-checkbox class="example-margin" [(ngModel)]="checked">Checkbox to send the notification message automatically</mat-checkbox> -->
+        <mat-checkbox class="example-margin" [formControl]='checkbox'>Checkbox to send the notification message automatically</mat-checkbox>
+      </div>
+      <br>
+        <button type="submit"  class="registerbtn">Register</button>
+    </form>
+    </div>
+</mat-card>
