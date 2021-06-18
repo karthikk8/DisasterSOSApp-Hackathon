@@ -69,7 +69,7 @@ Preparatory / post incident measures and tips / information for different types 
 
 ## Demo video
 
-[![Watch the video](https://github.com/Call-for-Code/Liquid-Prep/blob/master/images/readme/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
+[![Watch the video](https://github.com/karthikk8/DisasterSOSApp-Hackathon/blob/main/images/Homepage.JPG)](https://youtu.be/bicJ-Zh0hLQ)
 
 ## The architecture
 
