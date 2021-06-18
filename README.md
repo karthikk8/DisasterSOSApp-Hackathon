@@ -23,7 +23,6 @@ _Read this in other languages: [English](README.md), [한국어](./docs/README.k
   - [Getting started](#getting-started)
   - [Live demo](#live-demo)
   - [Built with](#built-with)
-  - [Contributing](#contributing)
   - [Versioning](#versioning)
   - [Authors](#authors)
   - [License](#license)
@@ -113,9 +112,6 @@ You can find a running system to test at [disaster-sos-web.eu-gb.mybluemix.net](
 - [Maven](https://maven.apache.org/) - Dependency management
 
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
