@@ -95,7 +95,7 @@ Please find the detailed roadmap for the application development.
 In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
 
 - [Springboot Java app](./SpringBootAppServercode/java-spring-app-smopa-2021-06-15/)
-- [Angular Web UI App](./sample-angular-app/)
+- [Angular Web UI App](./Angular JS/Hack1/)
 
 
 ## Live demo
