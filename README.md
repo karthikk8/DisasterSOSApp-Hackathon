@@ -6,8 +6,6 @@ The GitHub repository for WIP Hackathon for the application - DisasterSOS.
 
 
 
-_Read this in other languages: [English](README.md), [한국어](./docs/README.ko.md), [português](./docs/README.pt_br.md)._
-
 ## Contents
 
 - [Submission or project name](#submission-or-project-name)
