@@ -55,14 +55,14 @@ Using Disaster SOS Application user will be benefited on the below points
 
 ### The idea
 
-- > Design and develop a cloud-based application which will be available in both web interface & mobile version for the user. In broader sense, the application will have below capability / functionality made available to the user
-- > User registration and capture relatives / friends list
-- > User Login
-- > Get current weather forecast based on user location (Latitude and Longitude) at any point of time
-- > In case of any situation arises, can directly call (for Mobile App) or send message / email notification to their relatives / friends, listed in profile along with user’s location
-- > In case of any adverse situation (total power outage / no net connectivity), app will send automatic notification to the relatives / friends listed for all target user based on the location of the incident
-- > Provide information on help / facility and support arrangements made by local or central Govt authorities in the vicinity based on geographic location of the user with calling facility (for Mobile App)
-- >Get advance alert notifications for critical weather forecast issued by local or central Govt authorities for public interest
+1) Design and develop a cloud-based application which will be available in both web interface & mobile version for the user. In broader sense, the application will have below capability / functionality made available to the user
+2) User registration and capture relatives / friends list
+3) User Login
+4) Get current weather forecast based on user location (Latitude and Longitude) at any point of time
+5) In case of any situation arises, can directly call (for Mobile App) or send message / email notification to their relatives / friends, listed in profile along with user’s location
+6) In case of any adverse situation (total power outage / no net connectivity), app will send automatic notification to the relatives / friends listed for all target user based on the location of the incident
+7) Provide information on help / facility and support arrangements made by local or central Govt authorities in the vicinity based on geographic location of the user with calling facility (for Mobile App)
+8) Get advance alert notifications for critical weather forecast issued by local or central Govt authorities for public interest
 Preparatory / post incident measures and tips / information for different types of disasters
 
 
@@ -73,28 +73,21 @@ Preparatory / post incident measures and tips / information for different types 
 
 ## The architecture
 
-![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
+![Video transcription/translation app](https://github.com/karthikk8/DisasterSOSApp-Hackathon/blob/main/images/Architecture%20diagram.jpg)
 
-1. The user navigates to the site and uploads a video file.
-2. Watson Speech to Text processes the audio and extracts the text.
-3. Watson Translation (optionally) can translate the text to the desired language.
-4. The app stores the translated text as a document within Object Storage.
+1. The user opens the Application in mobile or computer.
+2. Webserver provides the UI to the user with options to login,register and add contact details.
+3. Application server process the requests and updated the data in Cloudant database.
+4. Cloudant database stores the user details in different databases.
 
 ## Long description
 
-[More detail is available here](./docs/DESCRIPTION.md)
+The following enhacements are planned for this application.
+![Enhancements](https://github.com/karthikk8/DisasterSOSApp-Hackathon/blob/main/images/Enhancements.jpg)
 
 ## Project roadmap
 
-The project currently does the following things.
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-It's in a free tier IBM Cloud Kubernetes cluster. In the future we plan to run on Red Hat OpenShift, for example.
-
-See below for our proposed schedule on next steps after Call for Code 2021 submission.
+Please find the detailed roadmap for the application development.
 
 ![Roadmap](./images/roadmap.jpg)
 
@@ -102,20 +95,21 @@ See below for our proposed schedule on next steps after Call for Code 2021 submi
 
 In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
 
-- [sample-react-app](./sample-react-app/)
-- [sample-angular-app](./sample-angular-app/)
-- [Explore other projects](https://github.com/upkarlidder/ibmhacks)
+- [Springboot Java app](./SpringBootAppServercode/java-spring-app-smopa-2021-06-15/)
+- [Angular Web UI App](./sample-angular-app/)
+
 
 ## Live demo
 
-You can find a running system to test at [callforcode.mybluemix.net](http://callforcode.mybluemix.net/).
+You can find a running system to test at [disaster-sos-web.eu-gb.mybluemix.net](http://disaster-sos-web.eu-gb.mybluemix.net
+
+).
 
 ## Built with
 
 - [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
 - [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
 - [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 - [Maven](https://maven.apache.org/) - Dependency management
 
 
