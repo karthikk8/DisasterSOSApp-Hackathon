@@ -2,7 +2,7 @@
 
 
 
-A basic GitHub repository example for WIP Hackathon.
+The GitHub repository for WIP Hackathon for the application - DisasterSOS.
 
 
 
