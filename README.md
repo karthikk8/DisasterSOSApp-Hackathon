@@ -123,7 +123,7 @@ a)Santhi Krishna Gogineni
 b)Karthik Kumar
 c)Bhaskar Ghosh
 d)Preeti Tenihalli
-
+![Team](./images/Team picture.jpg.jpg)
 
 
 ## License
