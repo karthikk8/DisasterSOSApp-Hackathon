@@ -36,25 +36,35 @@ _Read this in other languages: [English](README.md), [한국어](./docs/README.k
 Natural disasters are out of human control, but as the consequences of natural disasters there is human suffering caused by damage to life, personal property, and infrastructure. Every year, millions of people are affected by this, families are displaced, victims lose shelter, face the danger of death or physical injury. This is complicated further by immense shortages of food and drinking water. Several medical and psychological problems among the victims are major offshoots of natural disasters. Though it is beyond human control, but by leveraging new cutting age technology we can minimize the impact to a significant amount and can handle post incident consequences. 
 Considering the above facts, the idea of creating an app to assist people to be prepare and take action in case of such emergency, came up by using cloud solution based on their current geographic location and climate.
 User will be able to see present weather condition based on their location at any point of time. In case of adverse situation arising due to disaster, can reach out to their extended family members / friends for help. Get information on help / facility and support provided by Govt. authorities in his near vicinity. Will get the alerts sent by Govt. authorities on any critical weather forecast. Application will have provision for general guidelines for Do and Don’ts based on different adverse situations.
-![image](https://user-images.githubusercontent.com/38486666/122586792-b834fd00-d07a-11eb-8bf3-c6c68149a6d3.png)
+
 
 
 ### How can technology help?
+Using Disaster SOS Application user will be benefited on the below points
+    In case of total power outage / no net connectivity, application will send automatic notifications to the relatives / friends listed in the  profile
+    Get weather information at any point of time
+    Be able to get forecast alert notification automatically before any natural disaster occurs
+    Be able to plan accordingly to be prepared and mitigate upcoming effects due to natural disaster
+    Ask for help from his relatives / friends with almost no time along with his location details
+    Be well informed about help / facility and support arrangements made by local or central Govt authorities in the vicinity based on geographic location
+    Make direct call from the app itself  
+    Increase awareness on preparatory / post incident measures and tips / information for different types of disasters
+    
 
 
 
 ### The idea
 
-Design and develop a cloud-based application which will be available in both web interface & mobile version for the user. In broader sense, the application will have below capability / functionality made available to the user
-User registration and capture relatives / friends list
-User Login
-Get current weather forecast based on user location (Latitude and Longitude) at any point of time
-In case of any situation arises, can directly call (for Mobile App) or send message / email notification to their relatives / friends, listed in profile along with user’s location
-In case of any adverse situation (total power outage / no net connectivity), app will send automatic notification to the relatives / friends listed for all target user based on the location of the incident
-Provide information on help / facility and support arrangements made by local or central Govt authorities in the vicinity based on geographic location of the user with calling facility (for Mobile App)
-Get advance alert notifications for critical weather forecast issued by local or central Govt authorities for public interest
+- > Design and develop a cloud-based application which will be available in both web interface & mobile version for the user. In broader sense, the application will have below capability / functionality made available to the user
+- > User registration and capture relatives / friends list
+- > User Login
+- > Get current weather forecast based on user location (Latitude and Longitude) at any point of time
+- > In case of any situation arises, can directly call (for Mobile App) or send message / email notification to their relatives / friends, listed in profile along with user’s location
+- > In case of any adverse situation (total power outage / no net connectivity), app will send automatic notification to the relatives / friends listed for all target user based on the location of the incident
+- > Provide information on help / facility and support arrangements made by local or central Govt authorities in the vicinity based on geographic location of the user with calling facility (for Mobile App)
+- >Get advance alert notifications for critical weather forecast issued by local or central Govt authorities for public interest
 Preparatory / post incident measures and tips / information for different types of disasters
-![image](https://user-images.githubusercontent.com/38486666/122586865-c97e0980-d07a-11eb-8c7f-7de40193bf7e.png)
+
 
 
 ## Demo video
@@ -107,7 +117,7 @@ You can find a running system to test at [callforcode.mybluemix.net](http://call
 - [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
 - [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 - [Maven](https://maven.apache.org/) - Dependency management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
 
 ## Contributing
 
@@ -115,7 +125,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+
 
 ## Authors
 
@@ -123,12 +133,12 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
   <img src="https://contributors-img.web.app/image?repo=Call-for-Code/Project-Sample" />
 </a>
 
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
+
 
 ## License
 
-This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
+
 
 ## Acknowledgments
 
-- Based on [Billie Thompson's README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
+
