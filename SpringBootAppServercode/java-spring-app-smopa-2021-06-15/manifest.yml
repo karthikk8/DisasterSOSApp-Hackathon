@@ -1,0 +1,9 @@
+applications:
+- path: ./target/javaspringapp-1.0-SNAPSHOT.jar
+  instances: 1
+  memory: 1024M
+  timeout: 180
+  disk_quota: 1024M
+  name: DisasterSOS
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git#v4.31
+  host: DisasterSOS
