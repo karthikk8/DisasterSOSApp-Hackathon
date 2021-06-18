@@ -123,9 +123,10 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Authors
 
-<a href="https://github.com/Call-for-Code/Project-Sample/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=Call-for-Code/Project-Sample" />
-</a>
+a)Santhi Krishna Gogineni
+b)Karthik Kumar
+c)Bhaskar Ghosh
+d)Preeti Tenihalli
 
 
 
